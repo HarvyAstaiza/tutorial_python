@@ -1,32 +1,32 @@
-#tipos de datos primitivos
-#numeros enteros
+# tipos de datos primitivos
+# numeros enteros
 
-numero1:int = 52
+numero1: int = 52
 print(numero1)
 
 numero2 = 24
 print(numero2)
 
 # numeros reales
-numero3 : float = 0.1
+numero3: float = 0.1
 print(numero3)
 
 numero4 = 0.2
 print(numero4)
 
-#Booleanos
-esColombiano: bool =True
+# Booleanos
+esColombiano: bool = True
 esArgentino = False
 print(esColombiano)
 
-#Caracter y cadena de caracteres
+# Caracter y cadena de caracteres
 mensaje = "cadena con una comilla simple ',una comilla doble \" y una diagonal invertida \\ "
 
 print(mensaje)
 
-#Operadores
+# Operadores
 
-#Aritmeticos
+# Aritmeticos
 numero5 = 9
 numero6 = 12
 suma = numero5 + numero6
@@ -41,36 +41,59 @@ print("la resta es :", resta)
 print("la division es:", division)
 print("el residuo es:", modulo)
 
-#Asignacion
+# Asignacion
 x = 7
 y = 8
 z = 2
 print(x)
 
-#Logicos
-#and(y)
+# Logicos
+# and(y)
 
-q=5
+q = 5
 print(q > 4 and q < 9)
 
-#or(o)
+# or(o)
 
 p = 4
-print(p > 5 or p <10)
+print(p > 5 or p < 10)
 
-#not
+# not
 
 
-print(not(p>2 and q<7))
+print(not (p > 2 and q < 7))
 
-#relacional
+# relacional
 
 valor1 = 7
 valor2 = 9
 
-print(valor1 == valor2) #igual
-print(valor1 > valor2) #mayor que
-print(valor1 < valor2) #menor que
-print(valor1 >= valor2) #mayor igual que
-print(valor1 <= valor2) #menor igual que
-print(valor1 != valor2) #no igual
+print(valor1 == valor2)  # igual
+print(valor1 > valor2)  # mayor que
+print(valor1 < valor2)  # menor que
+print(valor1 >= valor2)  # mayor igual que
+print(valor1 <= valor2)  # menor igual que
+print(valor1 != valor2)  # no igual
+
+# funciones
+"""
+las funciones son un bloque de codigo 
+que solo se ejecutan cuando se llaman. 
+"""
+
+
+def mi_funcion():
+    print("¡Feliz Dia!")
+
+
+mi_funcion() #invocar la funcion
+
+
+def mensaje(nombre,apellido):
+    print("¡Feliz dia!"+nombre +" "+ apellido)
+mensaje("Andrea","Rendon")
+
+
+
+
+
