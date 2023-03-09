@@ -1,36 +1,21 @@
-#lista enlazada
+# lista
+# Crear una lista de carros
 
-class Nodo:
-    def __init__(self, valor):
-        self.valor = valor
-        self.siguiente = None
+carros = ["Toyota Corolla", "Honda Civic", "Ford Mustang", "Chevrolet Camaro"]
 
-class ListaEnlazada:
-    def __init__(self):
-        self.primer_nodo = None
+def listarCarros(cars):
+    for carro in cars:
+        print(carro)
 
-    def agregar_nodo(self, valor):
-        nuevo_nodo = Nodo(valor)
-        if self.primer_nodo is None:
-            self.primer_nodo = nuevo_nodo
-        else:
-            nodo_actual = self.primer_nodo
-            while nodo_actual.siguiente is not None:
-                nodo_actual = nodo_actual.siguiente
-            nodo_actual.siguiente = nuevo_nodo
+#ejemplo uso
+listarCarros(carros)
 
-    def imprimir_lista(self):
-        if self.primer_nodo is None:
-            print("La lista está vacía.")
-        else:
-            nodo_actual = self.primer_nodo
-            while nodo_actual is not None:
-                print(nodo_actual.valor)
-                nodo_actual = nodo_actual.siguiente
 
-# Ejemplo de uso
-lista = ListaEnlazada()
-lista.agregar_nodo(5)
-lista.agregar_nodo(10)
-lista.agregar_nodo(15)
-lista.imprimir_lista()
+#listas Enlazadas
+lista_Nombres = ["Juan", "María", "Pedro", "Sofía"]
+lista_Numeros = [10, 7, 8, 9]
+lista_Booleanos = [True, False, True, False]
+
+lista4= [lista_Nombres,  lista_Numeros , lista_Booleanos]
+
+print(lista4)
